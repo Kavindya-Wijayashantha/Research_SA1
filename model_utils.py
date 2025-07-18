@@ -3,6 +3,9 @@ import numpy as np
 import re
 import spacy
 from transformers import BertTokenizer, BertModel
+import nltk
+nltk.download('vader_lexicon')
+
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 

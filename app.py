@@ -3,6 +3,13 @@ import torch
 import numpy as np
 from model_utils import FeatureExtractor, load_model
 import os
+import nltk
+nltk.download('vader_lexicon')
+
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
+
+# Your sentiment analysis code here
+sid = SentimentIntensityAnalyzer()
 
 # Page configuration
 st.set_page_config(
